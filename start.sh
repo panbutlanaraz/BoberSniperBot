@@ -1,4 +1,8 @@
 #!/bin/bash
+# Skrypt startowy bota BoberSniperBot
 
-# Start twojego bota
-node bot/sniper.js
+# Instalacja zależności (jeśli brak zainstalowanych)
+npm install
+
+# Uruchomienie głównej aplikacji Node
+node bot.js
