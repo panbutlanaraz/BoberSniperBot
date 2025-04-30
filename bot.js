@@ -50,6 +50,22 @@ bot.onText(/^\/shadow/, (msg) => {
   setMode('shadow');
   bot.sendMessage(msg.chat.id, "🔁 Przełączono z powrotem do trybu SHADOW (symulacja).");
 });
+bot.onText(/^\/stop/, (msg) => {
+  stopSniper();
+  bot.sendMessage(msg.chat.id, "🛑 Bot zatrzymany.");
+});
+
+bot.onText(/^\/stats/, (msg) => {
+  const s = getStats();
+  bot.sendMessage(msg.chat.id,
+    `📈 Statystyki:\n` +
+    `Wykryte tokeny: ${s.totalDetected}\n` +
+    `Zakupione: ${s.totalBought}\n` +
+    `Odrzucone: ${s.totalSkipped}\n` +
+    `Zainwestowano: ${s.totalInvested.toFixed(4)} SOL\n` +
+    `Zysk (symulowany): ${s.totalProfit.toFixed(4)} SOL`
+  );
+});
 
 // === 🔧 STATUS PORTFELA
 log(`🔑 Adres portfela: ${publicKey.toBase58()}`);
