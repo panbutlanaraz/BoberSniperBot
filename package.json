@@ -1,19 +1,26 @@
 {
   "name": "bobersniperbot",
   "version": "1.0.0",
-  "description": "AI-driven sniper bot for Solana memecoins",
-  "main": "start.sh",
+  "description": "Solana Pump.fun/Photon sniper bot (shadow mode + live mode)",
+  "main": "bot.js",
   "scripts": {
-    "start": "bash start.sh"
+    "start": "node bot.js"
   },
-  "author": "panbutlanaraz",
+  "keywords": [
+    "solana",
+    "sniper",
+    "pump.fun",
+    "photon",
+    "bot",
+    "telegram"
+  ],
+  "author": "BoberSniperBot",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.7",
-    "node-fetch": "^3.3.2",
-    "dotenv": "^16.3.1",
+    "@solana/web3.js": "^1.79.0",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "ws": "^8.13.0",
-    "@solana/web3.js": "^1.94.2"
+    "node-telegram-bot-api": "^0.61.0"
   }
 }
