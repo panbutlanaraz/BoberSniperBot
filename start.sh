@@ -1,1 +1,4 @@
-// Placeholder content for start.sh
+#!/bin/bash
+
+# Start twojego bota
+node bot/sniper.js
