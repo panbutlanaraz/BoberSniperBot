@@ -1,1 +1,19 @@
-// Placeholder content for package.json
+{
+  "name": "bobersniperbot",
+  "version": "1.0.0",
+  "description": "AI-driven sniper bot for Solana memecoins",
+  "main": "start.sh",
+  "scripts": {
+    "start": "bash start.sh"
+  },
+  "author": "panbutlanaraz",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "ws": "^8.13.0",
+    "@solana/web3.js": "^1.94.2"
+  }
+}
